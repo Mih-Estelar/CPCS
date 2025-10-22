@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>C.P.C.S — Arquivos de Classificação</title>
+<style>
+  body {
+    background: #0a0a0a;
+    color: #d7d7d7;
+    font-family: "Roboto Mono", monospace;
+    margin: 0;
+  }
+
+  header {
+    text-align: center;
+    padding: 50px 20px 30px;
+    background: #0e0e0e;
+    border-bottom: 2px solid #e53935;
+  }
+
+  header img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #111;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.3);
+    transition: 0.3s ease;
+  }
+
+  header img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.45);
+  }
+
+  header h1 {
+    color: #e53935;
+    margin-top: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .intro {
+    max-width: 680px;
+    margin: 15px auto 0;
+    color: #999;
+    line-height: 1.6;
+    font-size: 14px;
+  }
+
+  hr {
+    width: 70%;
+    border: none;
+    border-top: 1px solid #222;
+    margin: 40px auto;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .card {
+    background: #101010;
+    border: 1px solid #1c1c1c;
+    border-left: 3px solid #e53935;
+    border-radius: 4px;
+    text-align: left;
+    padding: 20px 25px;
+    transition: 0.3s;
+  }
+
+  .card:hover {
+    background: #151515;
+    transform: translateY(-3px);
+  }
+
+  .class-id {
+    color: #e53935;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .class-title {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #f1f1f1;
+  }
+
+  .desc {
+    color: #a3a3a3;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  button {
+    display: inline-block;
+    background: transparent;
+    border: 1px solid #e53935;
+    color: #e53935;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 18px;
+    border-radius: 3px;
+    margin-top: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  button:hover {
+    background: #e53935;
+    color: #fff;
+  }
+
+  footer {
+    text-align: center;
+    padding: 40px 0 25px;
+    font-size: 13px;
+    color: #777;
+    border-top: 1px solid #111;
+    margin-top: 40px;
+  }
+
+  footer span {
+    color: #e53935;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="olho.gif" alt="Símbolo C.P.C.S.">
+  <h1>C.P.C.S — Centro de Pesquisa do Campo Sete</h1>
+  <p class="intro">
+    Arquivo interno de classificação de entidades anômalas.  
+    O acesso é restrito a pesquisadores nível 3 ou superior.  
+    Cada classe representa o grau de risco e complexidade comportamental das entidades observadas.
+  </p>
+</header>
+
+<hr>
+
+<section class="grid">
+  <div class="card">
+    <div class="class-id">Classe 1</div>
+    <div class="class-title">Olhos Macios</div>
+    <div class="desc">Entidades dóceis e de baixo risco. Demonstram curiosidade inofensiva e pouca capacidade de adaptação.</div>
+    <button onclick="location.href='olhosmacios.html'">Acessar Arquivo</button>
+  </div>
+
+  <div class="card">
+    <div class="class-id">Classe 2</div>
+    <div class="class-title">Olhos Pacific</div>
+    <div class="desc">Comportamento previsível e não agressivo. São seguras para observação supervisionada.</div>
+    <button onclick="location.href='olhospacific.html'">Acessar Arquivo</button>
+  </div>
+
+  <div class="card">
+    <div class="class-id">Classe 3</div>
+    <div class="class-title">Olhos Instinct</div>
+    <div class="desc">Reagem com agressividade moderada a estímulos. Possuem instintos imprevisíveis sob estresse.</div>
+    <button onclick="location.href='olhosinstinct.html'">Acessar Arquivo</button>
+  </div>
+
+  <div class="card">
+    <div class="class-id">Classe 4</div>
+    <div class="class-title">Olhos Dead</div>
+    <div class="desc">Inertes até serem provocadas. Extremamente hostis e resistentes a neutralização física.</div>
+    <button onclick="location.href='olhosdead.html'">Acessar Arquivo</button>
+  </div>
+
+  <div class="card">
+    <div class="class-id">Classe 5</div>
+    <div class="class-title">Olhos Danger</div>
+    <div class="desc">Nível crítico. Inteligentes, adaptáveis e impossíveis de conter por meios convencionais.</div>
+    <button onclick="location.href='olhosdanger.html'">Acessar Arquivo</button>
+  </div>
+</section>
+
+<footer>
+  © <span>C.P.C.S</span> — Classificação de Entidades Anômalas | Documento confidencial
+</footer>
+
+</body>
+</html>
